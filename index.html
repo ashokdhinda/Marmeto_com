@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <header class="header">
@@ -38,14 +40,6 @@
       </div>
       </div> 
     </header>
-
-    <!-- <main class="front-image">
-          <div>
-            <img class="image-front" src="image/Rectangle 1.png" alt="">
-            
-          </div>
-         
-    </main> -->
   <main class="front-image">
   <div class="image-container">
     <img class="image-front" src="image/Rectangle 1.png" alt="Background Image">
@@ -56,6 +50,34 @@
   </div>
 </main>
 
+<main class="cart-container">
+  <section class="cart-items">
+    <table class="cart-table" id="items-list">
+      <thead class="head-part">
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Cart items will be dynamically inserted here -->
+      </tbody>
+    </table>
+  </section>
+
+  <aside class="cart-totals">
+    <h2>Cart Totals</h2>
+    <p class="subtotal-cls">Subtotal: <span>Rs.</span> <span id="subtotal">0</span></p>
+    <p class="total-price">Total:<span>Rs.</span><span  id="total">0</span></p>
+    <button class="checkout-button" id="checkout-btn">Check Out</button>
+  </aside>
+</main>
+
+
 
 </body>
 </html>
+<script src="script.js"></script>
